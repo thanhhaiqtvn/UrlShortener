@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="51" id="KGk-i7-Jjw" customClass="UrlShortenerCell" customModule="UrlShortener" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="677" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="677" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sy-Ad-0fz">
+                        <rect key="frame" x="20" y="5" width="637" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.09.2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo9-01-CtY">
+                                <rect key="frame" x="5" y="11" width="82" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://docs.swift.org/swift-bzxzxzxzcc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGv-x7-rti">
+                                <rect key="frame" x="92" y="11" width="269.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ix1-bG-yei" userLabel="View-arrow">
+                                <rect key="frame" x="385.5" y="0.0" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-PA-W5O">
+                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Caw-PA-W5O" secondAttribute="height" multiplier="1:1" id="QM4-e6-LWn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Caw-PA-W5O" firstAttribute="centerY" secondItem="Ix1-bG-yei" secondAttribute="centerY" id="O8J-pJ-VPX"/>
+                                    <constraint firstAttribute="width" secondItem="Ix1-bG-yei" secondAttribute="height" multiplier="1:1" id="Pak-jh-dSf"/>
+                                    <constraint firstItem="Caw-PA-W5O" firstAttribute="centerX" secondItem="Ix1-bG-yei" secondAttribute="centerX" id="TrY-wO-knq"/>
+                                    <constraint firstItem="Caw-PA-W5O" firstAttribute="top" secondItem="Ix1-bG-yei" secondAttribute="top" constant="10" id="YUP-Jc-VwU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://tinyurl.com/y6hoy9ss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-9u-LSF">
+                                <rect key="frame" x="430.5" y="11" width="196.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196.5" id="AbE-tM-wCc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wo9-01-CtY" firstAttribute="centerY" secondItem="5sy-Ad-0fz" secondAttribute="centerY" id="2dP-wO-jPC"/>
+                            <constraint firstAttribute="bottom" secondItem="Ix1-bG-yei" secondAttribute="bottom" id="6RU-6f-fC0"/>
+                            <constraint firstItem="Ix1-bG-yei" firstAttribute="top" secondItem="5sy-Ad-0fz" secondAttribute="top" id="7NX-yP-OFO"/>
+                            <constraint firstItem="Ix1-bG-yei" firstAttribute="centerY" secondItem="5sy-Ad-0fz" secondAttribute="centerY" id="9Rr-Uk-dTV"/>
+                            <constraint firstItem="DGv-x7-rti" firstAttribute="centerY" secondItem="5sy-Ad-0fz" secondAttribute="centerY" id="P6X-Nb-Qjh"/>
+                            <constraint firstItem="DGv-x7-rti" firstAttribute="leading" secondItem="wo9-01-CtY" secondAttribute="trailing" constant="5" id="ag5-TQ-W7y"/>
+                            <constraint firstItem="Ix1-bG-yei" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DGv-x7-rti" secondAttribute="trailing" constant="5" id="gZ3-uY-cVV"/>
+                            <constraint firstItem="wo9-01-CtY" firstAttribute="leading" secondItem="5sy-Ad-0fz" secondAttribute="leading" constant="5" id="hoo-Iz-fDf"/>
+                            <constraint firstItem="YIg-9u-LSF" firstAttribute="centerY" secondItem="5sy-Ad-0fz" secondAttribute="centerY" id="jmy-uC-7Pi"/>
+                            <constraint firstAttribute="trailing" secondItem="YIg-9u-LSF" secondAttribute="trailing" constant="10" id="vHl-vl-Yx8"/>
+                            <constraint firstItem="YIg-9u-LSF" firstAttribute="leading" secondItem="Ix1-bG-yei" secondAttribute="trailing" constant="5" id="xeN-Vq-JvD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="5sy-Ad-0fz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6sf-q6-eeO"/>
+                    <constraint firstAttribute="trailing" secondItem="5sy-Ad-0fz" secondAttribute="trailing" constant="20" id="Zeo-CZ-OaZ"/>
+                    <constraint firstItem="5sy-Ad-0fz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="mRr-C1-DuN"/>
+                    <constraint firstAttribute="bottom" secondItem="5sy-Ad-0fz" secondAttribute="bottom" constant="5" id="yIw-LG-3nZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDateCreated" destination="wo9-01-CtY" id="Nh4-cd-IET"/>
+                <outlet property="lblUrl" destination="DGv-x7-rti" id="qKh-O2-r8y"/>
+                <outlet property="lblUrlShorten" destination="YIg-9u-LSF" id="FOF-Zi-5H3"/>
+                <outlet property="viewContent" destination="5sy-Ad-0fz" id="hmb-9y-BiV"/>
+            </connections>
+            <point key="canvasLocation" x="-1208.5457271364319" y="131.19999999999999"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right-arrow" width="26" height="26"/>
+    </resources>
+</document>
