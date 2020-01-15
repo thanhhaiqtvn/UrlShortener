@@ -19,28 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 //        guard let _ = (scene as? UIWindowScene) else { return }
         
-//        guard let windowScene = (scene as? UIWindowScene) else { return }
-//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        
-//        let numberModule = NumberWireframe()
-//        let numberVC = numberModule.getModule(initNumber: 3)
-        
-//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//        let rootVC = storyboard.instantiateViewController(withIdentifier: "UrlShortenerVC") as! UrlShortenerVC
-//
-//
-//        window?.windowScene = windowScene
-//        window?.rootViewController = rootVC
-//        window?.makeKeyAndVisible()
-        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         
-        let urlShortenerModule = UrlShortenerWireframe()
-        let urlShortenerVC = urlShortenerModule.getModule()
+        let urlShortenerVC = UrlShortenerWireframe()
 
         window?.windowScene = windowScene
-        window?.rootViewController = urlShortenerVC
+        window?.rootViewController = urlShortenerVC.viewController
         window?.makeKeyAndVisible()
     }
 

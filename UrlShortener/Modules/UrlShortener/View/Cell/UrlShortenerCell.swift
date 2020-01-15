@@ -15,9 +15,19 @@ class UrlShortenerCell: UITableViewCell {
     @IBOutlet weak var lblUrl: UILabel!
     @IBOutlet weak var lblUrlShorten: UILabel!
     
+    weak var urlEntity: URLEntity? {
+        didSet {
+            bindView()
+        }
+    }
+    
+    static func identifier() -> String {
+        return "UrlShortenerCell"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code        
+        // Initialization code
         viewContent.layer.masksToBounds = true
         viewContent.layer.cornerRadius = 3
         
@@ -30,6 +40,17 @@ class UrlShortenerCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    // MARK: - Binding Data
+    private func bindView() {
+        guard let urlEntity = urlEntity else { return }
+
+        if let dateCreated = urlEntity.dateCreated {
+            lblDateCreated.text = dateCreated
+        }
+        lblUrl.text = urlEntity.url
+        lblUrlShorten.text = urlEntity.urlShorten
     }
     
 }

@@ -8,27 +8,21 @@
 
 import UIKit
 
-class UrlShortenerWireframe {
+class UrlShortenerWireframe: Wireframe {
+    deinit {
+        debugPrint(String(describing: self), "deinit")
+    }
     
-    var interactor:UrlShortenerInteractor!
-    var presenter:UrlShortenerPresenter!
-    
-    func getModule() -> UIViewController {
-        let view = UrlShortenerVC(nibName: "UrlShortenerVC", bundle: nil)
-        
-        let entity = UrlEntity()
-        let presenter = UrlShortenerPresenter()
-        let interactor = UrlShortenerInteractor(entity: entity)
-        
-        view.urlShortenerPresenter = presenter
-        presenter.urlShortenerView = view
-        interactor.urlShortenerPresenter = presenter
-        presenter.urlShortenerInteractor = interactor
-        presenter.urlShortenerWireframe = self
-        
-        self.interactor = interactor
-        self.presenter = presenter
-        
+    var viewController: UIViewController {
+        let view = UrlShortenerVC()
+        let interactor = UrlShortenerInteractor(coreDatamanager: coreDataManager)
+        let presenter = UrlShortenerPresenter(interactor: interactor, wireframe: self)
+
+        presenter.view = view
+        view.presenter = presenter
+        interactor.output = presenter
+
         return view
     }
+
 }

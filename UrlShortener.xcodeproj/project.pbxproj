@@ -8,22 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		0502BE6523C336CD005C0FCC /* UrlShortenerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502BE6423C336CD005C0FCC /* UrlShortenerPresenter.swift */; };
-		0502BE6723C336DC005C0FCC /* UrlShortenerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502BE6623C336DC005C0FCC /* UrlShortenerPresenterProtocol.swift */; };
 		0502BE6923C336F3005C0FCC /* UrlShortenerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502BE6823C336F3005C0FCC /* UrlShortenerInteractor.swift */; };
-		0502BE6B23C33700005C0FCC /* UrlShortenerInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502BE6A23C33700005C0FCC /* UrlShortenerInteractorIO.swift */; };
-		0502BE6D23C33714005C0FCC /* UrlEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502BE6C23C33714005C0FCC /* UrlEntity.swift */; };
-		053766F823C3A73C00E148AC /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053766F723C3A73C00E148AC /* Persistable.swift */; };
-		053766FA23C3A75B00E148AC /* PropertyReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053766F923C3A75B00E148AC /* PropertyReflectable.swift */; };
 		0537670323C3BB5D00E148AC /* UrlShortenerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537670123C3BB5D00E148AC /* UrlShortenerCell.swift */; };
 		0537670423C3BB5D00E148AC /* UrlShortenerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0537670223C3BB5D00E148AC /* UrlShortenerCell.xib */; };
 		0537670623C3C19700E148AC /* UrlShortenerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0537670523C3C19700E148AC /* UrlShortenerVC.xib */; };
+		05B650B223CF84C8008C16B5 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650B123CF84C8008C16B5 /* AppDefine.swift */; };
+		05B650B623CF852A008C16B5 /* URL_SHORTENER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05B650B423CF852A008C16B5 /* URL_SHORTENER.xcdatamodeld */; };
+		05B650B823CF857D008C16B5 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650B723CF857D008C16B5 /* Entity.swift */; };
+		05B650BA23CF8595008C16B5 /* URLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650B923CF8595008C16B5 /* URLEntity.swift */; };
+		05B650BD23CF85D5008C16B5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650BC23CF85D5008C16B5 /* CoreDataManager.swift */; };
+		05B650C023CF8645008C16B5 /* UrlShortenerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650BF23CF8645008C16B5 /* UrlShortenerProtocols.swift */; };
+		05B650C223CF8687008C16B5 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650C123CF8687008C16B5 /* Wireframe.swift */; };
+		05B650CD23CF8951008C16B5 /* MockUrlShortenerInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650C623CF894F008C16B5 /* MockUrlShortenerInteractorOutput.swift */; };
+		05B650CE23CF8951008C16B5 /* MockUrlShortenerWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650C723CF894F008C16B5 /* MockUrlShortenerWireframe.swift */; };
+		05B650CF23CF8951008C16B5 /* MockUrlShortenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650C823CF8950008C16B5 /* MockUrlShortenerView.swift */; };
+		05B650D023CF8951008C16B5 /* MockUrlShortenerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650C923CF8950008C16B5 /* MockUrlShortenerPresenter.swift */; };
+		05B650D123CF8951008C16B5 /* MockUrlShortenerInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650CA23CF8950008C16B5 /* MockUrlShortenerInteractorInput.swift */; };
+		05B650D223CF8951008C16B5 /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650CB23CF8950008C16B5 /* MockPersistentContainer.swift */; };
+		05B650D323CF8951008C16B5 /* MockCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650CC23CF8950008C16B5 /* MockCoreDataManager.swift */; };
+		05B650D523CF897A008C16B5 /* UrlShortenerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650D423CF897A008C16B5 /* UrlShortenerViewTests.swift */; };
+		05B650D723CF8989008C16B5 /* UrlShortenerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650D623CF8989008C16B5 /* UrlShortenerPresenterTests.swift */; };
+		05B650DA23CF8C03008C16B5 /* UrlShortenerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B650D923CF8C03008C16B5 /* UrlShortenerInteractorTests.swift */; };
 		05D7F11D23C3342500957252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F11C23C3342500957252 /* AppDelegate.swift */; };
 		05D7F11F23C3342500957252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F11E23C3342500957252 /* SceneDelegate.swift */; };
 		05D7F12623C3342700957252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D7F12523C3342700957252 /* Assets.xcassets */; };
 		05D7F12923C3342700957252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D7F12723C3342700957252 /* LaunchScreen.storyboard */; };
 		05D7F13423C3342700957252 /* UrlShortenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F13323C3342700957252 /* UrlShortenerTests.swift */; };
 		05D7F15623C334FC00957252 /* UrlShortenerWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F15523C334FC00957252 /* UrlShortenerWireframe.swift */; };
-		05D7F15823C3350F00957252 /* UrlShortenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F15723C3350F00957252 /* UrlShortenerView.swift */; };
 		05D7F15C23C3354200957252 /* UrlShortenerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7F15B23C3354200957252 /* UrlShortenerVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,15 +50,27 @@
 
 /* Begin PBXFileReference section */
 		0502BE6423C336CD005C0FCC /* UrlShortenerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerPresenter.swift; sourceTree = "<group>"; };
-		0502BE6623C336DC005C0FCC /* UrlShortenerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerPresenterProtocol.swift; sourceTree = "<group>"; };
 		0502BE6823C336F3005C0FCC /* UrlShortenerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerInteractor.swift; sourceTree = "<group>"; };
-		0502BE6A23C33700005C0FCC /* UrlShortenerInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerInteractorIO.swift; sourceTree = "<group>"; };
-		0502BE6C23C33714005C0FCC /* UrlEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlEntity.swift; sourceTree = "<group>"; };
-		053766F723C3A73C00E148AC /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
-		053766F923C3A75B00E148AC /* PropertyReflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyReflectable.swift; sourceTree = "<group>"; };
 		0537670123C3BB5D00E148AC /* UrlShortenerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerCell.swift; sourceTree = "<group>"; };
 		0537670223C3BB5D00E148AC /* UrlShortenerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UrlShortenerCell.xib; sourceTree = "<group>"; };
 		0537670523C3C19700E148AC /* UrlShortenerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UrlShortenerVC.xib; sourceTree = "<group>"; };
+		05B650B123CF84C8008C16B5 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
+		05B650B523CF852A008C16B5 /* URL_SHORTENER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URL_SHORTENER.xcdatamodel; sourceTree = "<group>"; };
+		05B650B723CF857D008C16B5 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		05B650B923CF8595008C16B5 /* URLEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEntity.swift; sourceTree = "<group>"; };
+		05B650BC23CF85D5008C16B5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		05B650BF23CF8645008C16B5 /* UrlShortenerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerProtocols.swift; sourceTree = "<group>"; };
+		05B650C123CF8687008C16B5 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		05B650C623CF894F008C16B5 /* MockUrlShortenerInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUrlShortenerInteractorOutput.swift; sourceTree = "<group>"; };
+		05B650C723CF894F008C16B5 /* MockUrlShortenerWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUrlShortenerWireframe.swift; sourceTree = "<group>"; };
+		05B650C823CF8950008C16B5 /* MockUrlShortenerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUrlShortenerView.swift; sourceTree = "<group>"; };
+		05B650C923CF8950008C16B5 /* MockUrlShortenerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUrlShortenerPresenter.swift; sourceTree = "<group>"; };
+		05B650CA23CF8950008C16B5 /* MockUrlShortenerInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUrlShortenerInteractorInput.swift; sourceTree = "<group>"; };
+		05B650CB23CF8950008C16B5 /* MockPersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
+		05B650CC23CF8950008C16B5 /* MockCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoreDataManager.swift; sourceTree = "<group>"; };
+		05B650D423CF897A008C16B5 /* UrlShortenerViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlShortenerViewTests.swift; sourceTree = "<group>"; };
+		05B650D623CF8989008C16B5 /* UrlShortenerPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlShortenerPresenterTests.swift; sourceTree = "<group>"; };
+		05B650D923CF8C03008C16B5 /* UrlShortenerInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerInteractorTests.swift; sourceTree = "<group>"; };
 		05D7F11923C3342500957252 /* UrlShortener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrlShortener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D7F11C23C3342500957252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05D7F11E23C3342500957252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +81,6 @@
 		05D7F13323C3342700957252 /* UrlShortenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerTests.swift; sourceTree = "<group>"; };
 		05D7F13523C3342700957252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05D7F15523C334FC00957252 /* UrlShortenerWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerWireframe.swift; sourceTree = "<group>"; };
-		05D7F15723C3350F00957252 /* UrlShortenerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerView.swift; sourceTree = "<group>"; };
 		05D7F15B23C3354200957252 /* UrlShortenerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlShortenerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,15 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		053766F623C3A72D00E148AC /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				053766F723C3A73C00E148AC /* Persistable.swift */,
-				053766F923C3A75B00E148AC /* PropertyReflectable.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
 		053766FE23C3BA5100E148AC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,78 @@
 				0537670223C3BB5D00E148AC /* UrlShortenerCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		05B650B023CF84B0008C16B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05B650B123CF84C8008C16B5 /* AppDefine.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		05B650B323CF850A008C16B5 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				05B650B423CF852A008C16B5 /* URL_SHORTENER.xcdatamodeld */,
+				05B650B723CF857D008C16B5 /* Entity.swift */,
+				05B650B923CF8595008C16B5 /* URLEntity.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		05B650BB23CF85C3008C16B5 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				05B650BC23CF85D5008C16B5 /* CoreDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		05B650BE23CF8636008C16B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				05B650BF23CF8645008C16B5 /* UrlShortenerProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		05B650C323CF88FC008C16B5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				05B650CB23CF8950008C16B5 /* MockPersistentContainer.swift */,
+				05B650CC23CF8950008C16B5 /* MockCoreDataManager.swift */,
+				05B650C723CF894F008C16B5 /* MockUrlShortenerWireframe.swift */,
+				05B650C823CF8950008C16B5 /* MockUrlShortenerView.swift */,
+				05B650C923CF8950008C16B5 /* MockUrlShortenerPresenter.swift */,
+				05B650CA23CF8950008C16B5 /* MockUrlShortenerInteractorInput.swift */,
+				05B650C623CF894F008C16B5 /* MockUrlShortenerInteractorOutput.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		05B650C423CF8908008C16B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05B650D423CF897A008C16B5 /* UrlShortenerViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05B650C523CF8910008C16B5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				05B650D623CF8989008C16B5 /* UrlShortenerPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		05B650D823CF8BE2008C16B5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				05B650D923CF8C03008C16B5 /* UrlShortenerInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		05D7F11023C3342400957252 = {
@@ -131,6 +216,10 @@
 		05D7F13223C3342700957252 /* UrlShortenerTests */ = {
 			isa = PBXGroup;
 			children = (
+				05B650C323CF88FC008C16B5 /* Mocks */,
+				05B650C423CF8908008C16B5 /* View */,
+				05B650C523CF8910008C16B5 /* Presenter */,
+				05B650D823CF8BE2008C16B5 /* Interactor */,
 				05D7F13323C3342700957252 /* UrlShortenerTests.swift */,
 				05D7F13523C3342700957252 /* Info.plist */,
 			);
@@ -148,8 +237,10 @@
 		05D7F14D23C3346C00957252 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				053766F623C3A72D00E148AC /* Protocol */,
 				05D7F14E23C3347200957252 /* Appdelegate */,
+				05B650B023CF84B0008C16B5 /* Helpers */,
+				05B650B323CF850A008C16B5 /* Entites */,
+				05B650BB23CF85C3008C16B5 /* DataManager */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,28 +257,19 @@
 		05D7F14F23C3348200957252 /* UrlShortener */ = {
 			isa = PBXGroup;
 			children = (
+				05B650BE23CF8636008C16B5 /* Protocols */,
 				05D7F15423C334AA00957252 /* Wireframe */,
 				05D7F15323C334A500957252 /* View */,
 				05D7F15223C3349C00957252 /* Presenter */,
 				05D7F15123C3349400957252 /* Interactor */,
-				05D7F15023C3348E00957252 /* Entity */,
 			);
 			path = UrlShortener;
-			sourceTree = "<group>";
-		};
-		05D7F15023C3348E00957252 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				0502BE6C23C33714005C0FCC /* UrlEntity.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		05D7F15123C3349400957252 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				0502BE6823C336F3005C0FCC /* UrlShortenerInteractor.swift */,
-				0502BE6A23C33700005C0FCC /* UrlShortenerInteractorIO.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -196,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				0502BE6423C336CD005C0FCC /* UrlShortenerPresenter.swift */,
-				0502BE6623C336DC005C0FCC /* UrlShortenerPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -205,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				053766FE23C3BA5100E148AC /* Cell */,
-				05D7F15723C3350F00957252 /* UrlShortenerView.swift */,
 				05D7F15B23C3354200957252 /* UrlShortenerVC.swift */,
 				0537670523C3C19700E148AC /* UrlShortenerVC.xib */,
 			);
@@ -216,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				05D7F15523C334FC00957252 /* UrlShortenerWireframe.swift */,
+				05B650C123CF8687008C16B5 /* Wireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -322,19 +403,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0502BE6D23C33714005C0FCC /* UrlEntity.swift in Sources */,
 				05D7F11D23C3342500957252 /* AppDelegate.swift in Sources */,
-				053766FA23C3A75B00E148AC /* PropertyReflectable.swift in Sources */,
+				05B650B823CF857D008C16B5 /* Entity.swift in Sources */,
 				0502BE6523C336CD005C0FCC /* UrlShortenerPresenter.swift in Sources */,
 				0537670323C3BB5D00E148AC /* UrlShortenerCell.swift in Sources */,
-				05D7F15823C3350F00957252 /* UrlShortenerView.swift in Sources */,
+				05B650B623CF852A008C16B5 /* URL_SHORTENER.xcdatamodeld in Sources */,
+				05B650B223CF84C8008C16B5 /* AppDefine.swift in Sources */,
+				05B650C023CF8645008C16B5 /* UrlShortenerProtocols.swift in Sources */,
 				05D7F11F23C3342500957252 /* SceneDelegate.swift in Sources */,
-				0502BE6723C336DC005C0FCC /* UrlShortenerPresenterProtocol.swift in Sources */,
 				05D7F15C23C3354200957252 /* UrlShortenerVC.swift in Sources */,
 				05D7F15623C334FC00957252 /* UrlShortenerWireframe.swift in Sources */,
-				053766F823C3A73C00E148AC /* Persistable.swift in Sources */,
-				0502BE6B23C33700005C0FCC /* UrlShortenerInteractorIO.swift in Sources */,
+				05B650C223CF8687008C16B5 /* Wireframe.swift in Sources */,
 				0502BE6923C336F3005C0FCC /* UrlShortenerInteractor.swift in Sources */,
+				05B650BD23CF85D5008C16B5 /* CoreDataManager.swift in Sources */,
+				05B650BA23CF8595008C16B5 /* URLEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +424,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B650D223CF8951008C16B5 /* MockPersistentContainer.swift in Sources */,
+				05B650CE23CF8951008C16B5 /* MockUrlShortenerWireframe.swift in Sources */,
+				05B650CD23CF8951008C16B5 /* MockUrlShortenerInteractorOutput.swift in Sources */,
+				05B650D123CF8951008C16B5 /* MockUrlShortenerInteractorInput.swift in Sources */,
+				05B650D723CF8989008C16B5 /* UrlShortenerPresenterTests.swift in Sources */,
+				05B650D523CF897A008C16B5 /* UrlShortenerViewTests.swift in Sources */,
+				05B650D323CF8951008C16B5 /* MockCoreDataManager.swift in Sources */,
 				05D7F13423C3342700957252 /* UrlShortenerTests.swift in Sources */,
+				05B650CF23CF8951008C16B5 /* MockUrlShortenerView.swift in Sources */,
+				05B650D023CF8951008C16B5 /* MockUrlShortenerPresenter.swift in Sources */,
+				05B650DA23CF8C03008C16B5 /* UrlShortenerInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05B650B423CF852A008C16B5 /* URL_SHORTENER.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05B650B523CF852A008C16B5 /* URL_SHORTENER.xcdatamodel */,
+			);
+			currentVersion = 05B650B523CF852A008C16B5 /* URL_SHORTENER.xcdatamodel */;
+			path = URL_SHORTENER.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 05D7F11123C3342400957252 /* Project object */;
 }

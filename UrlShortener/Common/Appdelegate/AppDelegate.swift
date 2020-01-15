@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    private(set) var coreDataManager: CoreDataManager?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialize core data
+        coreDataManager = CoreDataManager(persistentContainer: persistentContainer)
+        
         return true
     }
 
@@ -30,6 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func applicationWillTerminate(_ application: UIApplication) {
+            // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+            // Saves changes in the application's managed object context before the application terminates.
+    //        coreDataManager?.saveContext()
+        }
+        
+        // MARK: - Core Data
+        private lazy var persistentContainer: NSPersistentContainer = {
+            let container = NSPersistentContainer(name: AppDefine.CONTAINER_NAME)
+            container.loadPersistentStores(completionHandler: { (_, error) in
+                if let error = error as NSError? {
+                    debugPrint("Error when loading core data \(error), \(error.userInfo)")
+                }
+            })
+            return container
+        }()
 
 }
 
